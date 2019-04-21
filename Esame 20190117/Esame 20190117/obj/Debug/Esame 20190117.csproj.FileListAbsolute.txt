@@ -1,0 +1,11 @@
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\Esame 20190117.exe.config
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\Esame 20190117.exe
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\Esame 20190117.pdb
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\nunit.framework.dll
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\nunit.framework.pdb
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\bin\Debug\nunit.framework.xml
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\obj\Debug\Esame 20190117.csprojAssemblyReference.cache
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\obj\Debug\Esame 20190117.csproj.CoreCompileInputs.cache
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\obj\Debug\Esame 20190117.csproj.CopyComplete
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\obj\Debug\Esame 20190117.exe
+C:\Users\Davide\source\repos\Esame 20190117\Esame 20190117\obj\Debug\Esame 20190117.pdb
