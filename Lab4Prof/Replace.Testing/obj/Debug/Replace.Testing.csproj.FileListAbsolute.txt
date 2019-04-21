@@ -1,0 +1,12 @@
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\Replace.Testing.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\Replace.Testing.pdb
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\nunit.framework.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\Replace.implementation.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\Replace.implementation.pdb
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\nunit.framework.pdb
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\bin\Debug\nunit.framework.xml
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\obj\Debug\Replace.Testing.csprojAssemblyReference.cache
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\obj\Debug\Replace.Testing.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\obj\Debug\Replace.Testing.csproj.CopyComplete
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\obj\Debug\Replace.Testing.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.Testing\obj\Debug\Replace.Testing.pdb

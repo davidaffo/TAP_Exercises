@@ -1,0 +1,6 @@
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\bin\Debug\Replace.implementation.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\bin\Debug\Replace.implementation.pdb
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\obj\Debug\Replace.Implementation.csprojAssemblyReference.cache
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\obj\Debug\Replace.Implementation.csproj.CoreCompileInputs.cache
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\obj\Debug\Replace.implementation.dll
+C:\Users\david\source\repos\Lab4Prof\Replace.implementation\obj\Debug\Replace.implementation.pdb
