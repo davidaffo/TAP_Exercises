@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace Esame20190201
@@ -94,7 +92,7 @@ namespace Esame20190201
         }
 
         [Test]
-        public void Infinite_swap_approx_returns([Values(4)] int approx)
+        public void Infinite_swap_approx_returns([Values(4,10,25,50)] int approx)
         {
             var s = Infinite().Take(approx);
             var expected = InfiniteRes(0).Take(approx);

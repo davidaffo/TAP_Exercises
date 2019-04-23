@@ -10,7 +10,7 @@ namespace Esame_20190117
 
     static class MyExtensions
     {
-        public static IEnumerable<IEnumerable<T>> RecApply <T>(this IEnumerable<IEnumerable<T>> s, Func<T,T> f)
+        public static IEnumerable<IEnumerable<T>> RecApply<T>(this IEnumerable<IEnumerable<T>> s, Func<T, T> f)
         {
             if (s == null)
                 throw new ArgumentNullException();
@@ -22,7 +22,7 @@ namespace Esame_20190117
             }
         }
 
-        private static IEnumerable<T> ApplySequence <T> (IEnumerable<T> sequence, Func<T,T> f)
+        private static IEnumerable<T> ApplySequence<T>(IEnumerable<T> sequence, Func<T, T> f)
         {
             foreach (var e in sequence)
             {
@@ -75,11 +75,13 @@ namespace Esame_20190117
         public void List_of_3_elements_with_infinite_element_function_increment_returns([Values(4)] int approx)
         {
             var s = new List<IEnumerable<int>>() { new List<int>(), new List<int>() { 6, 7, 8 }, Infinite().Take(approx) };
-            Func<int,int> f = e=> e +1;
+            Func<int, int> f = e => e + 1;
             var expected = new List<IEnumerable<int>>() { new List<int>(), new List<int>() { 7, 8, 9 }, InfiniteRes().Take(approx) };
             Assert.That(s.RecApply(f), Is.EqualTo(expected));
         }
     }
+
+    
 }
 
     
