@@ -15,25 +15,23 @@ namespace Esame20190201
             if (s == null)
                 throw new ArgumentNullException();
 
-            var now = s.GetEnumerator();
-            now.Reset();
-            var future = s.GetEnumerator();
-            if (!future.MoveNext())
+            var en = s.GetEnumerator();
+            if (!en.MoveNext())
                 return s;
             var resultList = new List<T>();
 
             do
             {
-                //swap
-                resultList.Add(future.Current);
-                resultList.Add(now.Current);
-
-                //jump 2
-                now.MoveNext();
-                if (!future.MoveNext())
+                var now = en.Current;
+                if (!en.MoveNext())
+                {
+                    resultList.Add(now);
                     return resultList;
-                now.MoveNext();
-            } while (future.MoveNext());
+                }
+                resultList.Add(en.Current);
+                resultList.Add(now);
+
+            } while (en.MoveNext());
 
             return resultList;
 
@@ -43,6 +41,43 @@ namespace Esame20190201
     [TestFixture]
     public class MyTest
     {
+
+        IEnumerable<int> Infinite() //sequenza infinita di numeri interi
+        {
+            int i = 1;
+            while (true)
+            {
+                yield return i++;
+            }
+        }
+
+        IEnumerable<int> InfiniteRes(int call) //sequenza infinita di numeri interi
+        {
+            if (call == 0)
+            {
+                call++;
+                yield return 2;
+            }
+            if (call == 1)
+            {
+                call++;
+                yield return 1;
+            }
+            int i = 1;
+            int j = 2;
+            bool even = false;
+            while (true)
+            {
+                if (even)
+                {
+                    even = !even;
+                    yield return i+=2;
+                }
+                even = !even;
+                yield return j += 2;
+            }
+        }
+
         [Test]
         public void Null_sequence_throws()
         {
@@ -55,6 +90,14 @@ namespace Esame20190201
         {
             var s = new List<string>() { "Donald Duck", "Louie", "Dewey", "Huey", "Scrooge McDuck" };
             var expected = new List<string>() { "Louie", "Donald Duck", "Huey", "Dewey", "Scrooge McDuck" };
+            Assert.That(s.EvenOddSwap(), Is.EqualTo(expected));
+        }
+
+        [Test]
+        public void Infinite_swap_approx_returns([Values(4)] int approx)
+        {
+            var s = Infinite().Take(approx);
+            var expected = InfiniteRes(0).Take(approx);
             Assert.That(s.EvenOddSwap(), Is.EqualTo(expected));
         }
     }

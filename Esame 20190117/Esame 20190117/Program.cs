@@ -7,12 +7,6 @@ using System.Threading.Tasks;
 
 namespace Esame_20190117
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
 
     static class MyExtensions
     {
